@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require_relative 'lib/pizzabot.rb'
+
+pizzabot = Pizzabot.new
+input = ARGV[0]
+
+pizzabot.parse_input(input)
+
+puts pizzabot.instructions.join
+
